@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="notes.css" type="text/css">
+    <link rel="icon" type="image/png" href="assets/book.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div><span><img src="assets/book image logo.jpg" alt="books"></span><h1>MyNotes</h1></div>
+       <ul>
+        <a href="#"><li> <h4>Menu</h4></li></a>
+        <a href="#"><li><h4>Favorites</h4></li></a>
+        <a href="#"><li><h4>Categories</h4></li></a>
+       </ul>
+    </header>
+
+    <main class="container">
+        <section class="note-container">
+            <h2>A Game of Thrones</h2>
+            <h4>George R. R. Martin</h4>
+            <p>A fantasy novel set in the Seven Kingdoms, where noble families battle for power over the Iron Throne.</p>
+            <div class="buttons">
+            <button class="del"><img src="assets/trash.svg" alt="">Delete</button>
+            <button id="edit"><img src="assets/edit.svg" alt="">Edit</button>
+            </div>
+        </section>
+        
+ </main>
+        <div class="overlay"></div>
+        <div class="popup">
+            <form action="#">
+            <h2>ADD A NOTE</h2> 
+            <input type="text" placeholder="Title" id="heading">
+            <input type="text" placeholder="Keywords" id="subheading">
+    
+            <textarea name="Description" id="text-area" placeholder="Short-Description" cols="15" rows="3"></textarea>
+            <div class="add-cancel">
+                <button id="add-btn">ADD</button>
+                <button id="cancel">CANCEL</button>
+            </div>
+            </form>
+        </div>
+
+
+     <button id="plus-btn">+</button>
+
+    <script src="notes.js"></script>
+</body>
+</html>
