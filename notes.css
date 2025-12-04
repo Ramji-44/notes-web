@@ -25,22 +25,24 @@ header{
     color: var(--popup);
     background-color: var(--headbg);
 }
-header div{
+
+header .header-logo{
     display: flex;
     align-items: center;
     gap: 0.5em;
 }
-header span{
+header #logo{
     background-color: var(--background);
     margin-left: 1em;
 }
-header span img{
+header #logo img{
     width: 30px;
     height: 30px;
     border-radius: 10px;
 }
-header ul{
+header .components{
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 1em;
     margin-right: 2em;
@@ -53,21 +55,24 @@ header ul a:hover {
     color:var(--background);
     text-decoration: underline;
 }
+
+.menu-bar img{
+  width: 35px;
+  display: none;
+}
 .container{
  min-height: 100vh;
  display: flex;
  flex-wrap: wrap;
  gap: 1em;
  padding: 1.5em;
- justify-content: center;
+ justify-content: flex-start;
 }
 .note-container{
-    max-width: 300px;
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    justify-content: center;
     background-color: #87BAC3;
     border-radius: 10px;
     padding: 1.5em;
@@ -174,7 +179,7 @@ aside{
     font-family: "Poppins", sans-serif;
     color: #212121;
 }
-.popup #text-area{
+#text-area{
     box-sizing: border-box;
     width: 100%;
     border-radius: 10px;
@@ -183,6 +188,8 @@ aside{
     border: none;
     background-color: #F5F1DC ;
 }
+
+
 .popup .add-cancel{
     display: flex;
     gap: 1em;
@@ -197,4 +204,16 @@ aside{
     font-size: 1em;
     cursor: pointer;
     border: none;
+}
+/* responsive */
+@media (max-width:500px){
+    header .components a{
+        display: none;
+    }
+    .menu-bar img{
+        display: block;
+    }
+    .note-container{
+        height: 250px;
+    }
 }

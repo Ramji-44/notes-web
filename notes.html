@@ -13,11 +13,12 @@
 <body>
     
     <header>
-        <div><span><img src="assets/book image logo.jpg" alt="books"></span><h1>MyNotes</h1></div>
-       <ul>
+        <div class="header-logo"><span id="logo"><img src="assets/book image logo.jpg" alt="books"></span><h1>MyNotes</h1></div>
+       <ul class="components">
         <a href="#"><li> <h4>Menu</h4></li></a>
         <a href="#"><li><h4>Favorites</h4></li></a>
         <a href="#"><li><h4>Categories</h4></li></a>
+        <div class="menu-bar"><img src="assets/home.svg" alt=""></div>
        </ul>
     </header>
 
@@ -40,7 +41,7 @@
             <input type="text" placeholder="Title" id="heading">
             <input type="text" placeholder="Keywords" id="subheading">
     
-            <textarea name="Description" id="text-area" placeholder="Short-Description" cols="15" rows="3"></textarea>
+            <textarea name="Description" id="text-area" placeholder="Short-Description"></textarea>
             <div class="add-cancel">
                 <button id="add-btn">ADD</button>
                 <button id="cancel">CANCEL</button>

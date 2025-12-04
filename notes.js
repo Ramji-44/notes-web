@@ -44,8 +44,8 @@ function join(event){
     <h4>${subtitle.value}</h4>
     <p>${texarea.value}</p>
     <div class="buttons">
-    <button class="del"><img src="trash.svg" alt="">Delete</button>
-    <button id="edit"><img src="edit.svg" alt="">Edit</button>
+    <button class="del"><img src="assets/trash.svg" alt="">Delete</button>
+    <button id="edit"><img src="assets/edit.svg" alt="">Edit</button>
     </div>`
     // appends the section(containerx) on the main(mainsector) as a container
     mainsector.append(containerx)
